@@ -1,3 +1,24 @@
+<?php
+
+if (!isset($_SESSION["validarIngreso"])) {
+
+    echo '<script>window.location = "index.php?ruta=ingreso";</script>';
+
+    return;
+
+} else {
+
+    if ($_SESSION["validarIngreso"] != "ok") {
+
+        echo '<script>window.location = "index.php?ruta=ingreso";</script>';
+
+        return;
+    }
+}
+
+$productos = ProductosModelo::mdlSeleccionarProductos();
+
+?>
 <h2>Carga de Productos</h2>
 <div>
     <form class="" method="post" enctype="multipart/form-data">
