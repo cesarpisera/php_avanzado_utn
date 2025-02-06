@@ -1,0 +1,234 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+
+header {
+    height: 300px;
+}
+
+#contenedor {
+    width: 960px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#botonera_principal {
+    width: 940px;
+    height: 70px;
+    border-left: 20px solid #284B63;
+    background-color: #FFFFFF;
+}
+
+#botonera_principal ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex; /* Usamos flexbox para alinear los elementos en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    height: 100%; /* Asegura que el ul ocupe toda la altura del nav */
+}
+
+#botonera_principal ul li {
+    flex: 1; /* Hace que cada li ocupe el mismo espacio */
+    text-align: center; /* Centra el texto dentro de cada li */
+}
+
+#botonera_principal ul li a {
+    display: block; /* Cambiamos a block para ocupar todo el espacio del li */
+    color: #353535;
+    text-decoration: none;
+    border-right: 1px dotted #D9D9D9;
+    height: 70px;
+    line-height: 70px; /* Centra el texto verticalmente */
+    transition: background-color 0.3s ease;
+}
+
+#botonera_principal ul li:last-child a {
+    border-right: none; /* Elimina el borde derecho del último elemento */
+}
+
+#botonera_principal ul li a:hover {
+    background-color: #3C6E71;
+    color: #FFFFFF;
+}
+
+#marca {
+    height: 200px;
+    padding-top: 27px;
+    border-left: solid 20px #3C6E71;
+    background: linear-gradient(0deg,
+            rgba(60, 110, 113, 0.9) 0%,
+            rgba(40, 75, 99, 1) 100%);
+}
+
+#contenido {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-left: 20px solid #284B63;
+}
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #D9D9D9;
+}
+
+body {
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #284B63;
+}
+
+a {
+    color: #3C6E71;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #284B63;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #284B63;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(53, 53, 53, 0.1);
+}
+
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+a.boton_editar {
+    color: #3C6E71;
+    font-weight: bold;
+}
+
+.boton_borrar {
+    border-radius: 16px;
+    border: 2px solid #353535;
+    background-color: #353535;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+tabla {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    margin-right: auto;
+}
+
+thead {
+    background-color: #284B63;
+    color: #FFFFFF;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+tbody tr:hover {
+    background: #F8F9FA;
+}
+
+.danger {
+    color: #353535;
+}
+
+footer {
+    background-color: #284B63;
+    padding: 20px;
+    border-left: 20px solid #3C6E71;
+    color: #FFFFFF;
+}
+
+.enviar {
+    border-radius: 20px;
+    border: 1px solid #284B63;
+    background-color: #3C6E71;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.enviar:hover {
+    background-color: #284B63;
+    transform: translateY(-2px);
+}
+
+.enviar:active {
+    transform: scale(0.95);
+}
+
+.enviar:focus {
+    outline: none;
+}
