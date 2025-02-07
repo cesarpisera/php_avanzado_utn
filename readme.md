@@ -45,8 +45,15 @@ vistas/
 - MySQL
 
 ## Funcionalidades
-- Registro e inicio de sesión de usuarios
-- Gestión de productos (creación, edición, eliminación)
+- Registro e inicio de sesión de usuarios.
+- Gestión de formularios: alta, baja y modificación.
+- Gestión de productos: alta, baja y modificación.
+- Validación de campos con AJAX.
+- Paginación de registros.
+- Protección de rutas y acceso a usuarios registrados.
+- Cifrado de contraseñas con hash.
+
+
 
 
 

@@ -108,7 +108,7 @@ class ControladorFormularios {
                     if ( window.history.replaceState ) {
                         window.history.replaceState( null, null, window.location.href );
                     }
-                    window.location = "index.php?ruta=inicio";
+                    window.location = "index.php?ruta=usuarios";
                 </script>';
             } else {
                 echo '<div class="alert alert-danger">Error al eliminar el registro: ' . $respuesta . '</div>';

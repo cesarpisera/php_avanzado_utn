@@ -22,6 +22,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <li> <a href="index.php?ruta=ingreso"> Ingreso </a></li>
                 <li> <a href="index.php?ruta=inicio"> Inicio </a></li>
                 <li> <a href="index.php?ruta=productos"> Productos </a></li>
+                <li> <a href="index.php?ruta=usuarios"> Usuarios </a></li>
                 <li> <a href="index.php?ruta=salir"> Salir </a></li>
             </ul>
         </nav>
@@ -41,6 +42,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 $_GET["ruta"] == "inicio" ||
                 $_GET["ruta"] == "productos" ||
                 $_GET["ruta"] == "editar" ||
+                $_GET["ruta"] == "usuarios" ||
                 $_GET["ruta"] == "salir"
             ) {
                 include "vistas/paginas/" . $_GET["ruta"] . ".php";
