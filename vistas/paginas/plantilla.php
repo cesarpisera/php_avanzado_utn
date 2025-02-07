@@ -42,6 +42,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 $_GET["ruta"] == "inicio" ||
                 $_GET["ruta"] == "productos" ||
                 $_GET["ruta"] == "editar" ||
+                $_GET["ruta"] == "editarRegistro" ||
                 $_GET["ruta"] == "usuarios" ||
                 $_GET["ruta"] == "salir"
             ) {

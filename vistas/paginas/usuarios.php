@@ -47,7 +47,7 @@ $usuarios = ControladorFormularios::ctrSeleccionarRegistros(null, null);
 			<td>
 
 			<div>		
-				<a href="index.php?ruta=editar&id=<?php echo $value["id"]; ?>" class="boton_editar">Editar</a>
+				<a href="index.php?ruta=editarRegistro&id=<?php echo $value["id"]; ?>" class="boton_editar">Editar</a>
 
 				<form method="post">
 
